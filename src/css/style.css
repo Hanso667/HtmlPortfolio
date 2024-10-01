@@ -1,0 +1,253 @@
+body {
+  display: flex;
+  flex-direction: column;
+  background-image: linear-gradient(rgb(83, 83, 83), rgb(36, 36, 36), rgb(83, 83, 83));
+}
+
+.head {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@keyframes slideInFromTop {
+  0% {
+    transform: translatey(-200%);
+  }
+
+  100% {
+    transform: translatey(0%);
+  }
+}
+
+.main-header {
+  animation: 1s ease-out 0s 1 slideInFromTop;
+  position: fixed;
+  top: 0px;
+  height: 13vh;
+  width: 100%;
+  background-image: linear-gradient(rgb(8, 8, 8), rgb(51, 51, 51));
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 2px 0px black;
+  gap: 20px;
+}
+
+.main-header img {
+  width: 15vh;
+  transition: 1s;
+}
+
+.main-header img:hover {
+  margin-top: 10px;
+  transition: 1s;
+}
+
+.circle {
+  margin-bottom: 5px;
+  background-color: white;
+  width: 5vh;
+  height: 5vh;
+  border: 1px solid black;
+  border-radius: 100%;
+}
+
+.circle2 {
+  margin-bottom: 15px;
+  background-color: white;
+  width: 3vh;
+  height: 3vh;
+  border: 1px solid black;
+  border-radius: 100%;
+}
+
+.sub {
+  position: fixed;
+  top: 13vh;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.wedge-left {
+  animation: 1s ease-out 0s 1 slideInFromTopSub;
+  width: 0;
+  height: 0;
+  border-top: 6.5vh solid rgb(51, 51, 51);
+  border-left: 3vh solid transparent;
+}
+
+@keyframes slideInFromTopSub {
+  0% {
+    transform: translatey(-430%);
+  }
+
+  100% {
+    transform: translatey(0%);
+  }
+}
+
+.sub-header {
+  animation: 1s ease-out 0s 1 slideInFromTopSub;
+  height: 6.1vh;
+  width: 50%;
+  background-color: rgb(51, 51, 51);
+  border-bottom: 2px solid black;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.wedge-right {
+  animation: 1s ease-out 0s 1 slideInFromTopSub;
+  width: 0;
+  height: 0;
+  border-top: 6.5vh solid rgb(51, 51, 51);
+  border-right: 3vh solid transparent;
+}
+
+.navigator {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.nav-item {
+  border-radius: 10%;
+  border: 1px solid black;
+  background-color: white;
+  box-shadow: 0px 0px 15px black, 0px 0px 2px black;
+}
+
+.nav-item:hover {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  border: 1px solid white;
+
+}
+
+.content {
+  margin-top: 20vh;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+@keyframes slideInFromRight {
+  0% {
+    transform: translatex(100%);
+  }
+
+  100% {
+    transform: translatex(0%);
+  }
+}
+
+.content-AboutMe {
+  animation: 1s ease-out 0s 1 slideInFromRight;
+  height: 67.6vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.AboutMe {
+  background-image: linear-gradient(rgb(139, 139, 139), rgb(116, 116, 116));
+  border: 2px solid black;
+  border-radius: 5%;
+  height: 90%;
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 0px 1px rgb(26, 26, 26);
+}
+
+.AboutMe h1 {
+  font-weight: bold;
+  text-decoration: underline;
+  font-size: larger;
+  margin-bottom: 10px;
+  text-shadow: 0px 0px 6px black;
+
+}
+
+.AboutMe p {
+  font-size: medium;
+  color: rgb(0, 0, 0);
+  text-shadow: 0px 0px 3px black;
+}
+
+.AboutMe img {
+  margin-bottom: 10px;
+  border-radius: 10%;
+  border: 1px solid black;
+  width: 20vh;
+  box-shadow: 0px 0px 15px rgb(24, 24, 24);
+}
+
+.texto {
+  border-radius: 5%;
+  height: 50%;
+  width: 95%;
+  border: 1px solid black;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: scalex(0%);
+  }
+
+  100% {
+    transform: scalex(100%);
+  }
+}
+
+.content-Ferramentas {
+  animation: 1s ease-out 0s 1 slideInFromLeft;
+  background-color: rgb(36, 36, 36);
+  height: 67.6vh;
+  width: 100%;
+  border: 2px solid black;
+}
+
+.content-Portfolio {
+  animation: 1s ease-out 0s 1 slideInFromRight;
+  height: 67.6vh;
+  width: 100%;
+}
+
+.foot {}
+
+.main-foooter {
+  height: 13vh;
+  width: 100%;
+  background-image: linear-gradient(rgb(51, 51, 51), rgb(8, 8, 8));
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px -2px 0px black;
+  gap: 20px;
+}
