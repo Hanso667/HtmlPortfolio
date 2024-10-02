@@ -29,9 +29,10 @@
                 <nav class="navigator">
                     <div class="circle4"></div>
                     <div class="circle3"></div>
-                    <a href="#AboutMe"><button class="nav-item">#AboutMe#</button></a>
-                    <a href="#Ferramentas"><button class="nav-item">#Ferramentas#</button></a>
-                    <a href="#Portfólio"><button class="nav-item">#Portfólio#</button></a>
+                    <a onclick="window.scrollTo(0,0)"><button class="nav-item">#AboutMe#</button></a>
+                    <a onclick="window.scrollTo(0,435)"><button class="nav-item">#Ferramentas#</button></a>
+                    <a onclick="window.scrollTo(0,888)"><button class="nav-item">#Portfólio#</button></a>
+                    <a onclick="window.scrollTo(0,1000)"><button class="nav-item">#Contato#</button></a>
                     <div class="circle3"></div>
                     <div class="circle4"></div>
                 </nav>
@@ -45,7 +46,7 @@
 
     <div class="content">
 
-        <main id="AboutMe" class="content-AboutMe">
+        <main class="content-AboutMe">
             <article class="AboutMe">
                 <img src="src/img/Perfil.jpg">
                 <div class="texto">
@@ -63,7 +64,7 @@
         <div class="portitulo">
             <h1>Ferramentas:</h1>
         </div>
-        <main class="content-Ferramentas" id="Ferramentas">
+        <main class="content-Ferramentas">
             <div class="card-ferramentas" id="java">
                 <img src="src/img/Java.svg">
             </div>
@@ -83,7 +84,7 @@
         <div class="portitulo">
             <h1>portfólio:</h1>
         </div>
-        <main class="content-Portfolio" id="Portfólio">
+        <main class="content-Portfolio" >
             <div class="card-portfolio">
                 <a onclick="window.open('https://hanso667.github.io/JogoAdvinha-oWeb/', '_blank');"><img
                         src="src/img/JogoAdv.png">
@@ -124,10 +125,10 @@
         </div>
         <footer class="main-foooter">
             <form action="https://formsubmit.co/fabriciolacerdamoraes2005@gmail.com" method="POST">
-                <input type="email" name="email" required>
-                <input type="text" name="Mensagem" required>
+                <input type="email" name="email" placeholder="Email" required>
+                <input type="text" name="Mensagem" placeholder="Mensagem" required>
                 <button type="submit">Send</button>
-           </form>
+            </form>
         </footer>
 
     </div>
