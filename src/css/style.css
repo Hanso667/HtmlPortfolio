@@ -135,7 +135,7 @@ body {
 }
 
 .nav-item {
-  border-radius: 10%;
+  border-radius: 1.03vh;
   border: 1px solid black;
   background-color: white;
   box-shadow: 0px 0px 15px black, 0px 0px 2px black;
@@ -182,7 +182,7 @@ body {
 .AboutMe {
   background-image: linear-gradient(rgb(139, 139, 139), rgb(116, 116, 116));
   border: 2px solid black;
-  border-radius: 5%;
+  border-radius: 2vh;
   height: 80%;
   width: 60%;
   display: flex;
@@ -209,14 +209,14 @@ body {
 
 .AboutMe img {
   margin-bottom: 10px;
-  border-radius: 10%;
+  border-radius: 2vh;
   border: 1px solid black;
   width: 20vh;
   box-shadow: 0px 0px 15px rgb(24, 24, 24);
 }
 
 .texto {
-  border-radius: 5%;
+  border-radius: 2vh;
   height: 40%;
   width: 95%;
   border: 1px solid black;
@@ -263,7 +263,7 @@ body {
   align-items: center;
   background-color: rgb(255, 255, 255);
   border: 2px solid rgb(31, 31, 31);
-  border-radius: 20%;
+  border-radius: 2vh;
   height: 40vh;
   width: 20vh;
 }
@@ -326,7 +326,26 @@ body {
   margin-top: 5vh;
   transition: 1s;
 }
+@keyframes SlideFromRight {
+  0% {
+    transform: translatex(-100%);
+  }
 
+  100% {
+    transform: translatex(0%);
+  }
+}
+.portitulo{
+  animation: 1s ease-out 0s 1 SlideFromRight;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: black;
+  height: 3vh;
+  width: 100%;
+}
 .content-Portfolio {
   display: flex;
   flex-direction: row;
@@ -353,7 +372,7 @@ body {
   align-items: center;
   background-color: rgb(255, 255, 255);
   border: 2px solid rgb(31, 31, 31);
-  border-radius: 20%;
+  border-radius: 4vh;
   height: 30vh;
   width: 30vh;
   transition: 1s;
@@ -390,6 +409,7 @@ body {
 }
 
 .main-foooter {
+  bottom: 0px;
   height: 13vh;
   width: 100%;
   background-image: linear-gradient(rgb(51, 51, 51), rgb(8, 8, 8));
@@ -399,20 +419,4 @@ body {
   align-items: center;
   box-shadow: 0px -2px 0px black;
   gap: 20px;
-}
-
-@media only screen and (max-width: 600px) {
-
-  .AboutMe {
-    background-image: linear-gradient(rgb(255, 0, 0), rgb(116, 116, 116));
-    border: 2px solid black;
-    border-radius: 5%;
-    height: 90%;
-    width: 75%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 0px 0px 1px rgb(26, 26, 26);
-  }
 }
