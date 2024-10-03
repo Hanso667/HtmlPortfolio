@@ -246,6 +246,7 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  flex-wrap: wrap;
   align-items: center;
   animation: 1s ease-out 0s 1 slideInFromLeft;
   background-color: rgb(36, 36, 36);
@@ -264,7 +265,6 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  flex-wrap: wrap;
   align-items: center;
   background-color: rgb(255, 255, 255);
   border: 2px solid rgb(31, 31, 31);
@@ -434,10 +434,25 @@ body {
   box-shadow: 0px -2px 0px black;
   gap: 20px;
 }
+.form{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 3px;
+}
 
 @media only screen and (max-width: 950px) {
   .sub-header {
     width: 75%;
+    margin-top: -0.2vh;
+  }
+  .wedge-left{
+    margin-top: -0.2vh;
+    margin-right: -0.15vh;
+  }
+  .wedge-right{
+    margin-top: -0.2vh;
+    margin-left: -0.15vh;
   }
 }
 
@@ -451,9 +466,45 @@ body {
   }
 }
 
+@media only screen and (max-width: 710px) {
+  .content-Ferramentas{
+    height: 100vh;
+  }
+  #java {
+    margin-top: 0vh;
+
+  }
+ 
+  #javascript {
+
+    margin-top: 0vh;
+
+  }
+
+  #Html5 {
+    margin-top: 0vh;
+  }
+
+  #Css3 {
+    margin-top: 0vh;
+  }
+
+  #Sql {
+    margin-top: 0vh;
+  }
+
+
+}
+
 @media only screen and (max-width: 650px) {
+  .AboutMe{
+    width: 80%;
+  }
+  .navigator {
+  gap: 3px;
+  }
   .card-ferramentas{
-    height: 30vh;
+    height: 35vh;
   }
   .sub-header {
     width: 85%;
@@ -462,16 +513,41 @@ body {
     width: 20vh;
     height: 20vh;
   }
+  .card-portfolio h1{
+    font-size: small;
+  }
 }
 
 @media only screen and (max-width: 540px) {
   .sub-header {
     width: 100%;
   }
+  .wedge-left{
+    display: none;
+  }
+  .wedge-right{
+    display: none;
+  }
 
 }
 
 @media only screen and (max-width: 450px) {
+  .card-portfolio{
+    width: 17vh;
+    height: 17vh;
+  }
+  .card-ferramentas{
+    width: 17vh;
+  }
+  .circle3{
+    display: none;
+  }
+  .circle4{
+    display: none;
+  }
+  .navigator {
+    gap: 0px;
+    }
   .texto {
     height: 55%;
   }
@@ -479,8 +555,25 @@ body {
   .texto p {
     font-size: small;
   }
+  .texto h1 {
+    font-size: small;
+  }
+  .card-portfolio h1{
+    font-size: x-small;
+  }
+}
+@media only screen and (max-width: 400px){
+  .nav-item{
+    font-size: x-small;
+  }
 }
 @media only screen and (max-width: 290px){
+  .circle2{
+    display: none;
+  }
+  .content-Ferramentas{
+    height: 120vh;
+  }
   .card-portfolio{
     width: 14vh;
     height: 14vh;
@@ -491,5 +584,10 @@ body {
   }
   .card-portfolio h1{
     font-size: x-small;
+  }
+}
+@media only screen and (max-width: 350px){
+  .nav-item{
+
   }
 }
