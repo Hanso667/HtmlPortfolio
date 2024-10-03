@@ -435,13 +435,13 @@ body {
   gap: 20px;
 }
 
-@media (max-width: 950px) {
+@media only screen and (max-width: 950px) {
   .sub-header {
     width: 75%;
   }
 }
 
-@media (max-width: 900px) {
+@media only screen and (max-width: 900px) {
   .texto {
     height: 50%;
   }
@@ -451,7 +451,7 @@ body {
   }
 }
 
-@media (max-width: 650px) {
+@media only screen and (max-width: 650px) {
   .card-ferramentas{
     height: 30vh;
   }
@@ -464,14 +464,14 @@ body {
   }
 }
 
-@media (max-width: 540px) {
+@media only screen and (max-width: 540px) {
   .sub-header {
     width: 100%;
   }
 
 }
 
-@media (max-width: 450px) {
+@media only screen and (max-width: 450px) {
   .texto {
     height: 55%;
   }
@@ -480,7 +480,7 @@ body {
     font-size: small;
   }
 }
-@media (max-width: 290px){
+@media only screen and (max-width: 290px){
   .card-portfolio{
     width: 14vh;
     height: 14vh;
