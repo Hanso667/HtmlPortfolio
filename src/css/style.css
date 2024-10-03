@@ -532,6 +532,9 @@ body {
 }
 
 @media only screen and (max-width: 450px) {
+  .content-Ferramentas{
+    height: 120vh;
+  }
   .card-portfolio{
     width: 17vh;
     height: 17vh;
@@ -571,9 +574,6 @@ body {
   .circle2{
     display: none;
   }
-  .content-Ferramentas{
-    height: 120vh;
-  }
   .card-portfolio{
     width: 14vh;
     height: 14vh;
@@ -584,10 +584,5 @@ body {
   }
   .card-portfolio h1{
     font-size: x-small;
-  }
-}
-@media only screen and (max-width: 350px){
-  .nav-item{
-
   }
 }
