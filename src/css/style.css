@@ -80,6 +80,14 @@ body {
   border: 1px solid black;
   transform: rotate(45deg);
 }
+.circle5 {
+  display: none;
+  background-color: white;
+  width: 3vh;
+  height: 3vh;
+  border: 1px solid black;
+  transform: rotate(45deg);
+}
 
 .sub {
   position: fixed;
@@ -497,6 +505,12 @@ body {
 }
 
 @media only screen and (max-width: 650px) {
+  .nav-item{
+    display: none;
+  }
+  .circle5{
+    display: flex;
+  }
   .AboutMe{
     width: 80%;
   }
