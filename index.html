@@ -31,11 +31,15 @@
                     <div class="circle4"></div>
                     <div class="circle3"></div>
                     <a onclick="window.scrollTo(0,0)"><button class="nav-item">#AboutMe#</button></a>
-                    <a onclick="window.scrollTo(0,450)"><button class="nav-item">#Ferramentas#</button></a>
+                    <a href="#AboutMe"><button class="nav-item-mob">#AboutMe#</button></a>
+                    <a onclick="window.scrollTo(0,438)"><button class="nav-item">#Ferramentas#</button></a>
+                    <a href="#Ferramentas"><button class="nav-item-mob">#Ferramentas#</button></a>
                     <div class="circle5"></div>
-                    <a onclick="window.scrollTo(0,915)"><button class="nav-item">#Portfólio#</button></a>
+                    <a onclick="window.scrollTo(0,895)"><button class="nav-item">#Portfólio#</button></a>
+                    <a href="#Portfólio"><button class="nav-item-mob">#Portfólio#</button></a>
                     <a onclick="window.scrollTo(0,1000)"><button class="nav-item">#Contato#</button></a>
-                    <div class="circle3"></div>
+                    <a href="#Contato"><button class="nav-item-mob">#Contato#</button></a>
+                    <div class="circle3" id="square"></div>
                     <div class="circle4"></div>
                 </nav>
             </header>
@@ -48,7 +52,7 @@
 
     <div class="content">
 
-        <main class="content-AboutMe">
+        <main class="content-AboutMe" id="AboutMe">
             <article class="AboutMe">
                 <img src="src/img/Perfil.jpg">
                 <div class="texto">
@@ -65,7 +69,7 @@
         <div class="portitulo">
             <h1>Ferramentas:</h1>
         </div>
-        <main class="content-Ferramentas">
+        <main class="content-Ferramentas" id="Ferramentas">
             <div class="card-ferramentas" id="java">
                 <img src="src/img/Java.svg">
             </div>
@@ -85,7 +89,7 @@
         <div class="portitulo">
             <h1>portfólio:</h1>
         </div>
-        <main class="content-Portfolio" >
+        <main class="content-Portfolio" id="Portfólio" >
             <div class="card-portfolio">
                 <a onclick="window.open('https://hanso667.github.io/JogoAdvinha-oWeb/', '_blank');"><img
                         src="src/img/JogoAdv.png">
@@ -130,7 +134,7 @@
         <div class="portitulo">
             <h1>mande uma mensagem!</h1>
         </div>
-        <footer class="main-foooter">
+        <footer class="main-foooter" id="Contato">
             <form action="https://formsubmit.co/fabriciolacerdamoraes2005@gmail.com" method="POST" class="form">
                 <input type="email" name="email" placeholder="Email" required>
                 <textarea name="Mensagem" placeholder="Mensagem" required></textarea>
