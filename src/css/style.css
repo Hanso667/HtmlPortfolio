@@ -80,7 +80,8 @@ body {
   border: 1px solid black;
   transform: rotate(45deg);
 }
-#square{
+
+#square {
   margin-left: -3px;
 }
 
@@ -152,13 +153,15 @@ body {
   transform: scale(1.1);
 
 }
-.nav-item-mob{
+
+.nav-item-mob {
   display: none;
   border-radius: 1.03vh;
   border: 1px solid black;
   background-color: white;
   box-shadow: 0px 0px 15px black, 0px 0px 2px black;
 }
+
 .nav-item-mob:hover {
   background-color: black;
   color: white;
@@ -452,7 +455,8 @@ body {
   box-shadow: 0px -2px 0px black;
   gap: 20px;
 }
-.form{
+
+.form {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -464,35 +468,40 @@ body {
     width: 75%;
     margin-top: -0.2vh;
   }
-  .wedge-left{
+
+  .wedge-left {
     margin-top: -0.2vh;
     margin-right: -0.15vh;
   }
-  .wedge-right{
+
+  .wedge-right {
     margin-top: -0.2vh;
     margin-left: -0.15vh;
   }
 }
 
 @media only screen and (max-width: 900px) {
+
   .texto {
     height: 50%;
   }
 
   .AboutMe {
-    height: 100%;
+    height: 80%;
   }
+  
 }
 
 @media only screen and (max-width: 710px) {
-  .content-Ferramentas{
+  .content-Ferramentas {
     height: 100vh;
   }
+
   #java {
     margin-top: 0vh;
 
   }
- 
+
   #javascript {
 
     margin-top: 0vh;
@@ -515,35 +524,44 @@ body {
 }
 
 @media only screen and (max-width: 650px) {
-  .nav-item{
+  .nav-item {
     display: none;
   }
-  .nav-item-mob{
+
+  .nav-item-mob {
     display: flex;
   }
-  .navigator{
+
+  .navigator {
     gap: 0px;
   }
-  #square{
+
+  #square {
     margin-left: 3px;
   }
-  .AboutMe{
+
+  .AboutMe {
     width: 80%;
   }
+
   .navigator {
-  gap: 3px;
+    gap: 3px;
   }
-  .card-ferramentas{
+
+  .card-ferramentas {
     height: 35vh;
   }
+
   .sub-header {
     width: 85%;
   }
-  .card-portfolio{
+
+  .card-portfolio {
     width: 20vh;
     height: 20vh;
   }
-  .card-portfolio h1{
+
+  .card-portfolio h1 {
     font-size: small;
   }
 }
@@ -552,35 +570,43 @@ body {
   .sub-header {
     width: 100%;
   }
-  .wedge-left{
+
+  .wedge-left {
     display: none;
   }
-  .wedge-right{
+
+  .wedge-right {
     display: none;
   }
 
 }
 
 @media only screen and (max-width: 450px) {
-  .content-Ferramentas{
+  .content-Ferramentas {
     height: 120vh;
   }
-  .card-portfolio{
+
+  .card-portfolio {
     width: 17vh;
     height: 17vh;
   }
-  .card-ferramentas{
+
+  .card-ferramentas {
     width: 17vh;
   }
-  .circle3{
+
+  .circle3 {
     display: none;
   }
-  .circle4{
+
+  .circle4 {
     display: none;
   }
+
   .navigator {
     gap: 0px;
-    }
+  }
+
   .texto {
     height: 55%;
   }
@@ -588,32 +614,38 @@ body {
   .texto p {
     font-size: small;
   }
+
   .texto h1 {
     font-size: small;
   }
-  .card-portfolio h1{
+
+  .card-portfolio h1 {
     font-size: x-small;
   }
 }
-@media only screen and (max-width: 400px){
-  .nav-item-mob{
+
+@media only screen and (max-width: 400px) {
+  .nav-item-mob {
     font-size: 12px;
   }
 }
 
-@media only screen and (max-width: 290px){
-  .circle2{
+@media only screen and (max-width: 290px) {
+  .circle2 {
     display: none;
   }
-  .card-portfolio{
+
+  .card-portfolio {
     width: 14vh;
     height: 14vh;
   }
-  .card-portfolio img{
+
+  .card-portfolio img {
     width: 5vh;
     height: 5vh;
   }
-  .card-portfolio h1{
+
+  .card-portfolio h1 {
     font-size: x-small;
   }
 }
