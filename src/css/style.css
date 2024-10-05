@@ -487,6 +487,16 @@ body {
 
 .form input {
   width: 50vh;
+  background-color: white;
+  border: 1px solid black;
+}
+.form textarea{
+  background-color: white;
+  border: 1px solid black;
+}
+.form button{
+  background-color: white;
+  border: 1px solid black;
 }
 
 @media only screen and (min-width: 900px) {
