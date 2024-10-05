@@ -483,19 +483,18 @@ body {
   flex-direction: row;
   flex-wrap: wrap;
   gap: 3px;
+  background-color: white;
+  border: 1px solid black;
 }
 
 .form input {
-  width: 50vh;
-  background-color: white;
+  width: 40vh;
   border: 1px solid black;
 }
-.form textarea{
-  background-color: white;
+.form textarea {
   border: 1px solid black;
 }
-.form button{
-  background-color: white;
+.form button {
   border: 1px solid black;
 }
 
