@@ -1,0 +1,50 @@
+body{
+    height: 95vh;
+    background-image: url(../img/fundo.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes rgbcolor{
+    0%{
+     border: 3px solid rgb(255, 255, 255);
+    }
+    25%{
+     border: 3px solid rgb(145, 145, 145);
+    }
+    50%{
+     border: 3px solid rgb(0, 0, 0);
+    }
+    75%{
+     border: 3px solid rgb(145, 145, 145);
+    }
+    100%{
+     border: 3px solid rgb(255, 255, 255);
+    }
+}
+
+main{
+    animation: rgbcolor 3.5s linear;
+	animation-iteration-count: infinite;
+    height: 30%;
+    width: 50%;
+    border-radius: 5vh;
+    color: white;
+    backdrop-filter: blur(10px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+main button{
+    cursor: pointer;
+    border-radius: 1vh;
+    background-color: transparent;
+    color: white;
+    animation: rgbcolor 3.5s linear;
+	animation-iteration-count: infinite;
+}
