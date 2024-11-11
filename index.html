@@ -1,64 +1,154 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="pt-br">
 
 <head>
-    <link rel="stylesheet" href="src/css/reset.css">
-    <link rel="stylesheet" href="src/css/style.css">
-    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="src/css/reset.css">
+    <link rel="stylesheet" href="src/css/head.css">
+    <link rel="stylesheet" href="src/css/body.css">
+    <link rel="stylesheet" href="src/css/foot.css">
+    <meta charset="UTF-8">
+    <title>portfólio | Fabrício</title>
+    <script src="src/script/script.js"></script>
 </head>
 
 <body>
 
-    <header class="header-content">
-        <nav class="navigation">
-            <button class="navbut" onclick="stats()">Stats</button>
-            <button class="navbut" onclick="settings()">Settings</button>
-            <button class="navbut" onclick=""></button>
-            </nav>
-    </header>
+    <div class="content">
+        <div class="head" id="head">
 
-        <main id="stats" class="main-stats">
-
-            <container class="main-container">
-            
-            <label id="lblHealth" for="Health"></label><br>
-            <progress id="health" value="100" max="100"></progress>
-
-                <div class="input-div">
-                    <input id="inHealth" type="number"><button onclick="btnDamage()">ENTER</button>
+            <header class="main-header">
+                <div class="circle2"></div>
+                <div class="circle"></div>
+                <a href="index.html"><img src="src/img/Logo.png"></a>
+                <div class="circle"></div>
+                <div class="circle2"></div>
+            </header>
+    
+            <div class="sub">
+    
+                <div class="wedge-left">
                 </div>
-
-            <label id="lblMana" for="mana"></label><br>
-            <progress id="mana" value="100" max="100"></progress>
-
-                <div class="input-div">
-                    <input id="inMana" type="number"><button onclick="btnUse()">ENTER</button>
+    
+                <header class="sub-header">
+                    <nav class="navigator">
+                        <div class="circle4"></div>
+                        <div class="circle3"></div>
+                        <a onclick="window.scrollTo(0,0)"><button class="nav-item">#AboutMe#</button></a>
+                        <a href="#AboutMe"><button class="nav-item-mob">#AboutMe#</button></a>
+                        <a onclick="window.scrollTo(0,438)"><button class="nav-item">#Ferramentas#</button></a>
+                        <a href="#Ferramentas"><button class="nav-item-mob">#Ferramentas#</button></a>
+                        <div class="circle5"></div>
+                        <a onclick="window.scrollTo(0,895)"><button class="nav-item">#Portfólio#</button></a>
+                        <a href="#Portfólio"><button class="nav-item-mob">#Portfólio#</button></a>
+                        <a onclick="window.scrollTo(0,1100)"><button class="nav-item">#Contato#</button></a>
+                        <a href="#Contato"><button class="nav-item-mob">#Contato#</button></a>
+                        <div class="circle3" id="square"></div>
+                        <div class="circle4"></div>
+                    </nav>
+                </header>
+    
+                <div class="wedge-right">
                 </div>
+    
+            </div>
+        </div>
 
-        </container>
-
-    </main>
-
-    <main id="settings" class="main-settings">
-        <container class="main-container">
-
-                <label for="inVit">Vitalidade</label><br>
-                <div class="input-div">
-                    <input id="inVit" type="number" max="10" value="1"><button onclick="user.setVit()">ENTER</button>
+        <main class="content-AboutMe" id="AboutMe">
+            <article class="AboutMe">
+                <img src="src/img/Perfil.jpg">
+                <div class="texto">
+                    <h1>#Sobre Mim#</h1>
+                    <p> Oi, meu nome é Fabrício, tenho 19 anos e sou apaixonado por tecnologia!
+                        Comecei minha jornada educacional na EMEF Tiradentes, onde concluí o ensino fundamental.
+                        Em seguida, fiz o ensino médio no Ruben Dario.
+                        Atualmente, estou me especializando em Técnico em Informática na Ulbra São Lucas.
+                        Estou sempre em busca de aprender novas habilidades e me atualizar sobre as últimas tendências
+                        do mundo da tecnologia.</p>
                 </div>
+            </article>
+        </main>
+        <div class="portitulo">
+            <h1>Ferramentas:</h1>
+        </div>
+        <main class="content-Ferramentas" id="Ferramentas">
+            <div class="card-ferramentas" id="java">
+                <img src="src/img/Java.svg">
+            </div>
+            <div class="card-ferramentas" id="javascript">
+                <img src="src/img/javascript.png">
+            </div>
+            <div class="card-ferramentas" id="Html5">
+                <img src="src/img/Html5.png">
+            </div>
+            <div class="card-ferramentas" id="Css3">
+                <img src="src/img/css3.png">
+            </div>
+            <div class="card-ferramentas" id="Sql">
+                <img src="src/img/Sql.png">
+            </div>
+        </main>
+        <div class="portitulo">
+            <h1>portfólio:</h1>
+        </div>
+        <main class="content-Portfolio" id="Portfólio">
+            <container class="cards-portfolio">
+            <div class="card-portfolio">
+                <a onclick="window.open('https://hanso667.github.io/JogoAdvinha-oWeb/', '_blank');"><img
+                        src="src/img/JogoAdv.png">
+                    <h1> Jogo Advinhação</h1>
+                </a>
+            </div>
+            <div class="card-portfolio">
+                <a onclick="window.open('https://hanso667.github.io/GeradorOrcamentos/', '_blank');"><img
+                        src="src/img/Orcamentos.png">
+                    <h1>Gerador Orçamentos</h1>
+                </a>
+            </div>
+            <div class="card-portfolio">
+                <a onclick="window.open('https://github.com/Hanso667/CalculadoraCaixa', '_blank');"><img
+                        src="src/img/Java.svg">
+                    <h1>Calculadora Caixa</h1>
+                </a>
+            </div>
+            <div class="card-portfolio">
+                <a onclick="window.open('https://github.com/Hanso667/OrganizadorDeTarefas', '_blank');"><img
+                        src="src/img/Java.svg">
+                    <h1>Organizador Tarefas</h1>
+                </a>
+            </div>
+            <div class="card-portfolio">
+                <a onclick="window.open('https://hanso667.github.io/PokedexHtml/', '_blank');"><img
+                        src="src/img/Pokedex.png">
+                    <h1>Projeto Pokedex</h1>
+                </a>
+            </div>
+            <div class="card-portfolio">
+                <a onclick="window.open('https://github.com/Hanso667/ProjetoNumeros', '_blank');"><img
+                        src="src/img/Java.svg">
+                    <h1>Organizador Numeros</h1>
+                </a>
+            </div>
+            </container>
+        </main>
 
-                <label for="inSpi">Espirito</label><br>
-                <div class="input-div">
-                    <input id="inSpi" type="number" max="10" value="1"><button onclick="user.setSpi()">ENTER</button>
-                </div>
+    </div>
 
-        </container>
+    <div class="foot">
+        <div class="portitulo">
+            <h1>mande uma mensagem!</h1>
+        </div>
+        <footer class="main-foooter" id="Contato">
+            <form action="https://formsubmit.co/fabriciolacerdamoraes2005@gmail.com" method="POST" class="form">
+                <input type="email" name="email" placeholder="Email" required>
+                <textarea name="Mensagem" placeholder="Mensagem" required></textarea>
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_next" value="https://hanso667.github.io/HtmlPortfolio/thankYou.html">
+                <button type="submit">Send</button>
+            </form>
+        </footer>
 
-    </main>
-
-    <script src="src/js/player.js"></script>
+    </div>
 
 </body>
 
